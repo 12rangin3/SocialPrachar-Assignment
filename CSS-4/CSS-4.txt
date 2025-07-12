@@ -1,0 +1,66 @@
+CSS - Day 4
+Answer the Following Questions
+1.Explain the difference between block, inline, and inline-block properties
+A.Block:
+Takes full width, starts on a new line.
+Example: <div>, <p>
+
+Inline:
+Takes only as much width as needed, does not start on a new line.
+Example: <span>, <a>
+
+Inline-block:
+Like inline (stays in line), but allows setting width and height.
+Example: Used for buttons or custom layout elements.
+2.What is box-shadow? How to apply it?
+A.Box-shadow adds shadow effects around an element's box.
+
+Syntax:
+
+box-shadow: h-offset v-offset blur-radius color;
+Example:
+
+box-shadow: 2px 2px 5px gray;
+Meaning:
+
+2px: horizontal offset
+
+2px: vertical offset
+
+5px: blur radius
+
+gray: shadow color
+
+3.What happens if you set a negative margin?
+A.If you set a negative margin in CSS, the element pulls closer to its neighboring elements:
+
+Negative top margin: pulls the element up.
+
+Negative bottom margin: pulls the element down over the next element.
+
+Negative left/right margin: pulls the element left/right, possibly overlapping others.
+
+It's useful for fine layout adjustments but can break design if misused.
+4.What is border-radius? How to create a circle with it?
+A.Border-radius in CSS is used to make rounded corners.
+
+Syntax:
+border-radius: value;
+To create a circle:
+Make the element a square and set border-radius: 50%.
+
+Example:
+width: 100px;
+height: 100px;
+border-radius: 50%;
+This creates a perfect circle.
+5.What is display: none vs visibility: hidden?
+A.display: none
+
+Completely removes the element from the layout.
+
+No space is reserved.
+
+visibility: hidden
+
+Hides the element, but it still takes up space in the layout.

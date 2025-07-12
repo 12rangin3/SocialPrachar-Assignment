@@ -1,0 +1,40 @@
+.mountain{
+    width: 50%;
+    height: 500px;
+}
+.mountain-image{
+    width: 100%;
+}
+.mountain-2{
+    width: 50%;
+    height: 500px;
+    position: relative;
+    right: 0;
+    margin-left: auto;
+    top: 0;
+    margin-top: -500px;
+}
+.mountain-image-2{
+    width: 100%;
+    display: block;
+    position: absolute;
+}
+.sun{
+    width: 100px;
+    position: absolute;
+    left: 42%;
+    top: 57px;
+}
+.sun-image{
+    width: 100%;
+    display: block;
+}
+.grass{
+    width: 100%;
+    position: absolute;
+    top: 10px;
+}
+.grass-image{
+    width: 100%;
+    display: block;
+}

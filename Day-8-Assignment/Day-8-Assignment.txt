@@ -1,0 +1,54 @@
+HTML - Day 8
+1. What does SVG stand for and what is it used for in web development?
+A. ✅ SVG stands for:
+Scalable Vector Graphics
+✅ Used for:
+Displaying vector-based graphics (icons, shapes, charts) in websites
+
+Scales without losing quality (perfect for all screen sizes)
+
+Can be styled with CSS and controlled with JavaScript
+SVG is used to draw sharp, scalable graphics on the web.
+
+2.What is the Difference b/w git and Github ?
+A.Git is the tool to track code changes.
+GitHub is the platform to store and collaborate on Git projects online.
+| **Git**                            | **GitHub**                              |
+| ---------------------------------- | --------------------------------------- |
+| A **version control system**       | A **hosting platform** for Git projects |
+| Works **locally** on your computer | Works **online** via the web            |
+| Tracks changes in source code      | Stores and shares code repositories     |
+| Doesn't need internet              | Needs internet for access               |
+| Created by **Linus Torvalds**      | Owned by **Microsoft**                  |
+3.Explain the commands for pushing the code into github?
+A. Here are the basic Git commands to push your code to GitHub step by step:
+git init
+git remote add origin <repository-URL>
+git remote add origin https://github.com/username/repo-name.git
+git add .
+git commit -m "Your commit message"
+git push -u origin main
+
+4.What is sdlc (software development life cycle)
+A. Requirement Gathering – Understand what the user needs
+
+Planning – Plan the project, cost, time, and resources
+
+Design – Create architecture & UI design
+
+Development – Write the actual code
+
+Testing – Test the software for bugs and errors
+
+Deployment – Deliver the product to users
+
+Maintenance – Fix issues and update after release
+
+5.What is Fullstack ? Why should we learn it?
+A.Full Stack means working on both frontend and backend of a web application.
+
+Frontend: What users see (HTML, CSS, JavaScript, React, etc.)
+
+Backend: Server-side logic, database (Node.js, Express, MongoDB, etc.)
+
+A Full Stack Developer can build a complete web application from start to finish.

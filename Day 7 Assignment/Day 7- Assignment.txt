@@ -1,0 +1,43 @@
+HTML - Day 7
+1 . Explain the difference form_elements and form_controlls
+A. Form Elements -All HTML tags used in a form , Includes <form>, <label>, <fieldset>, etc. Used to build the structure of the form
+Form Controls - Only the interactive input fields, Includes <input>, <textarea>, <select>, etc. Used to collect user data
+
+2. Explain the difference required readonly and disabled attributes
+A. ✅ required: User must fill before submitting.
+
+✅ readonly: User can see but not change the value.
+
+✅ disabled: User can't interact, and it won't submit.
+<input type="text" required>        <!-- Must fill -->
+<input type="text" readonly value="Read only"> <!-- Can't edit, submits -->
+<input type="text" disabled value="Disabled"> <!-- Can't edit, not submitted -->
+
+3. Explain the difference between placeholder and value attributes in html?
+A.✅ placeholder: Temporary hint (e.g., “Enter name…”), disappears when user types.
+
+✅ value: Pre-filled actual data, can be submitted.
+4.What is the difference between semantic and non-semantic HTML tags?
+A. Semantic Tags-Clearly describe their meaning, Improve accessibility & SEO, Easy to understand for developers
+eg-<header>, <footer>, <article>, <section>, <nav>, <main>
+Non-Semantic Tags- Do not describe their content clearly, Do not help with SEO or screen readers, Need class/id to explain purpose
+<div>, <span>
+
+5.Explain the importance of meta tags in Html 
+A.Meta tags are HTML tags that provide information about the webpage to browsers and search engines. They go inside the <head> section of an HTML document.
+eg-<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn HTML basics for beginners.">
+  <meta name="robots" content="index, follow">
+</head>
+6. Explain the difference between section and div tags
+A. Both show the same content visually, but:
+
+<section> is semantic: tells browsers and search engines it’s a content block.
+
+<div> is just a container, used mainly for layout or styling.
+Use <section> for meaningful content blocks, and <div> for generic grouping or layout.
+7. Explain the difference between div and span tags?
+A. <div> = block container for larger layout
+<span> = inline container for styling small text

@@ -1,0 +1,153 @@
+1.What is selectors in CSS? Explain types of selectors.
+A.Types of CSS Selectors:
+Universal Selector (*)
+
+Targets all elements.
+
+Example: * { margin: 0; padding: 0; }
+
+Type Selector (Element Selector)
+
+Targets elements by tag name.
+
+Example: p { color: green; }
+
+Class Selector (.)
+
+Targets elements with a specific class.
+
+Example: .box { background: yellow; }
+
+ID Selector (#)
+
+Targets a specific element by ID.
+
+Example: #header { font-size: 24px; }
+
+Group Selector
+
+Targets multiple selectors together.
+
+Example: h1, h2, p { color: black; }
+
+Descendant Selector (space)
+
+Targets elements inside another element.
+
+Example: div p { color: red; }
+
+Child Selector (>)
+
+Targets direct children only.
+
+Example: ul > li { list-style: none; }
+
+Adjacent Sibling Selector (+)
+
+Targets the next sibling of an element.
+
+Example: h1 + p { margin-top: 0; }
+
+General Sibling Selector (~)
+
+Targets all siblings after an element.
+
+Example: h1 ~ p { color: gray; }
+
+Attribute Selector
+
+Targets elements by attribute.
+
+Example: input[type="text"] { border: 1px solid; }
+2.What is the difference between an ID selector and a class selector?
+A.Use ID (#) for unique elements, like headers, footers, or specific sections.
+
+Use Class (.) for repeated styles, like buttons, cards, or text blocks.
+3.What is specificity?
+A.Specificity is a set of rules that determine which CSS rule is applied when multiple rules target the same HTML element.
+4.What are combinator selectors? Name the four types.
+A.Four Types of Combinator Selectors:
+Descendant Selector (space)
+
+Selects elements inside another element (any level deep).
+
+Example:
+
+css
+Copy
+Edit
+div p { color: blue; }
+Child Selector (>)
+
+Selects elements that are direct children only.
+
+Example:
+
+css
+Copy
+Edit
+ul > li { list-style: none; }
+Adjacent Sibling Selector (+)
+
+Selects the element that is the immediate next sibling.
+
+Example:
+
+css
+Copy
+Edit
+h1 + p { margin-top: 0; }
+General Sibling Selector (~)
+
+Selects all siblings that come after a specific element.
+
+Example:
+
+css
+Copy
+Edit
+h1 ~ p { color: gray; }
+5.11. Difference between descendant selector (A B) and child selector (A > B)?
+a.Descendant Selector (A B):
+Selects all elements B inside A at any level.
+
+Child Selector (A > B):
+Selects only direct child B elements of A.
+6.Difference between adjacent sibling selector (A + B)  and  general sibling selector (A ~ B)?
+A. Adjacent Sibling Selector (A + B):
+Selects only the first B that comes immediately after A.
+
+General Sibling Selector (A ~ B):
+Selects all B elements that come after A as siblings.
+7.Explain simple selectors in css?
+A.Types of Simple Selectors:
+Universal Selector (*)
+
+Selects all elements.
+
+Example: * { margin: 0; }
+
+Type Selector (Element Selector)
+
+Selects elements by tag name.
+
+Example: p { color: blue; }
+
+Class Selector (.)
+
+Selects elements by class attribute.
+
+Example: .box { padding: 10px; }
+
+ID Selector (#)
+
+Selects an element by unique ID.
+
+Example: #header { background: gray; }
+
+Attribute Selector ([attribute])
+
+Selects elements with a specific attribute.
+
+Example: [type="text"] { border: 1px solid; }
+

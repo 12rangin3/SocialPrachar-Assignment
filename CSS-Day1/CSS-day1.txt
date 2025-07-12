@@ -1,0 +1,59 @@
+1.What is css ? write its advantages  & disadvantages ?
+A.
+CSS :CASCADING STYLESHEET 
+CASCADING :set of rules applied for an HTml ELEMENTS
+ CASCADE : It decide WHAT to property apply to html_ELEMENT WHEN STYLES ARE applied
+
+CSS: It used for styling or layout of webapages ,fonts ,colors animation etc 
+2.Write the features of css3 ?
+A.CSS3 Features 
+1.FLEXBOX (Weblayouts,imageGalleries ,navbar footer cards etc ...)(usedc for Developing 1d layout either Row or column)
+2.GRID  (newsPaper Layouts,admin panels etc..) (used for Developing 2d layouts both row and column)
+3.animation & transitions and 
+4.transformation (Rotate,scale,skew translate)
+5.RESPONSIVE WEBDESIGN (RWD) using the Media queries
+6.PSEUDO_CLASS AND PSEUDO_ELEMENTS 
+7.enchancement of Background property  (LInear-Gradient Conical GRadient RAdial Gradient)
+3.What is selector in css ? Why do we use it ?
+A.SELECTOR: ITS IS PATTERN USED FOR SELECTING HTML ELEMENTS TO STYLE 
+TYPES OF SELECTOR 
+1.simple SELECTOR : ELEMENT /tag selector  id class Group selector Universal selector 
+2.COMBINATORS SELECTOR :(TALKS ABOUT RELATIONSHIP SELECTOR)
+          child SELECTOR 
+          decendent selector
+          adjancent sibiling selector 
+          general sibiling selector
+3.PSEUDO_CLASS   :
+    hover link active visted nth-child  first-child etc...
+4.PSEUDO_ELEMENTS  ::
+      SELECTON MARKER FIRST_LINE  FIRST-LETTER ETC ..
+5.ATTRIBUTE SELECTOR 
+5. Explain different ways to add css to html ? and its importance
+A.Inline CSS
+
+Written directly in the HTML tag using the style attribute.
+
+Example: <p style="color: red;">Text</p>
+
+Internal CSS
+
+Defined within a <style> tag inside the <head> section of the HTML.
+
+Example:
+
+html
+Copy
+Edit
+<style>
+  p { color: blue; }
+</style>
+External CSS
+
+Written in a separate .css file and linked using the <link> tag.
+
+6.How does a class selector differ from an ID selector? When would you use each?
+A.Use Class Selector (.)
+When you want to style multiple elements with the same design (e.g., buttons, cards, titles).
+
+Use ID Selector (#)
+When you want to target a single unique element (e.g., a header section, footer, or unique block).

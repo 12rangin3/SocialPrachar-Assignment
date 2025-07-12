@@ -1,0 +1,14 @@
+Day_1 
+1. What is a Webpage?
+2. What is a Website?
+3. What is a URL?
+4. What is the difference b/w Single Page Website and Multi Page Website?
+5. What is the difference b/w Static Webpage and Dynamic Webpage ?
+6.What does HTML stand for?
+7.What is the latest version of HTML? Name some new features introduced in HTML5.?
+8.What is the difference between a tag and an element in HTML?
+9.Explain the difference between container elements and empty elements with examples.
+10.What is the purpose of the <!DOCTYPE html> declaration?
+11.How do headings (<h1> to <h6>) differ in size and usage?
+
+

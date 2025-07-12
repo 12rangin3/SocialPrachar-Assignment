@@ -1,0 +1,194 @@
+1. What is a Webpage?
+A. A webpage is a single document on the internet, written in HTML, that can be viewed in a web browser. It can contain text, images, videos
+2. What is a Website?
+A. A website is a collection of related webpages under a single domain.
+3. What is a URL?
+A. A URL (Uniform Resource Locator) is the address used to access a resource (like a webpage).
+4. What is the difference b/w Single Page Website and Multi Page Website?
+A. A Single Page Website loads all content on one page and updates dynamically without reloading.
+A Multi Page Website has multiple linked pages, each with its own URL and full reload when navigating.
+5. What is the difference b/w Static Webpage and Dynamic Webpage ?
+A. A Static Webpage displays fixed content and doesn’t change unless manually updated.
+A Dynamic Webpage displays content that can change based on user interaction or data from a server.
+6.What does HTML stand for?
+A.HTML: HYPERTEXT MARKUP LANGUAGE
+7.What is the latest version of HTML? Name some new features introduced in HTML5.?
+A.Multimedia Support: Easily embed images, audio, video, and iframes (for embedding other web pages).
+- Semantic Tags: Tags with clear meaning for both developers and browsers (e.g., <header>, <footer>, <nav>, <aside>, <figure>, <caption>, <main>, <section>). These improve SEO (Search Engine Optimization).
+- Form Enhancements: New input types like date, datetime, url, range, file, image, search, etc.
+- Entities: Special characters or symbols (e.g., &amp;, &lt;, &gt;).
+- SVG: Scalable Vector Graphics for drawing shapes and images.
+- Canvas: For drawing graphics via scripting (JavaScript).
+- Offline Support: Local storage for saving data in the browser.
+8.What is the difference between a tag and an element in HTML?
+A. Tag: Defines the type of content (e.g., <img>, <p>, <h1>).
+- Element: A tag with its content.
+  Example: <p>Hi everyone</p>
+    - <p>: Opening tag
+    - </p>: Closing tag
+    - Hi everyone: Content
+9.Explain the difference between container elements and empty elements with examples.
+A. - Container Elements: Have content inside them.
+  Example: <h1>Heading</h1>
+- Empty Elements: Self-closing, no content inside.
+  Examples: <img />, <hr />
+10.What is the purpose of the <!DOCTYPE html> declaration?
+A.<!DOCTYPE html>  <!-- represents/tells the current version of the html (HTML5)-->
+11.How do headings (<h1> to <h6>) differ in size and usage?
+A. <h1> is the largest heading.
+<h2> is slightly smaller.
+<h3> is smaller than <h2>, and so on.
+<h6> is the smallest heading.
+Day_2
+12.What is the purpose of the `<a>` tag in HTML?
+A. The <a> tag in HTML is used to create hyperlinks that link one page to another or to an external website.
+13.What is the difference between an absolute URL and a relative URL in the `href` attribute?
+A. An absolute URL includes the full path (e.g., https://example.com/page.html).
+A relative URL links to a file within the same website (e.g., page.html or ./folder/page.html).
+14.What does the `target="_blank"` attribute do in an anchor tag?
+A. Target Attribute:
+     - target="_blank": Opens link in a new tab.
+15.What is an attribute in HTML?
+A. Attributes give additional information about an element or tag.
+They are written inside the opening tag as name="value" and define properties like links, sources, sizes, or behavior.
+eg: src width height ,alt target  ,type id ,placeholder etc...
+
+<img src="logo.png" alt="Logo" width="100px">
+Here, src, alt, and width are attributes of the <img> tag.
+16.What is the purpose of the `<br>` tag?
+A. The <br> tag is used to insert a line break in the text, moving the content to the next line.
+17.What is the `<pre>` tag used for?
+A.  - Displays text exactly as it is written in the HTML (preserves spaces, tabs, and line breaks).
+   - Useful for code blocks, poetry, or any text where formatting matters.
+   - Example:
+   <pre>
+     This   is   preformatted
+     text.
+    </pre>
+18.What are HTML entities? Give two examples.
+A. Special symbols or characters that cannot be typed directly.
+   - Syntax: &entity_name; or &#code;
+   - Examples:
+        - &copy; → ©
+        - &nbsp; → (non-breaking space) Used to add extra spaces between words or characters.
+        - &#128512; → 😀 (emoji)
+   - Used for symbols, reserved characters, and spaces.
+Day_3
+19. What are the three main types of lists in HTML?
+A.ul :Unordered List  : Displays items with bullet points.
+Ol: Ordered list :Displays items with numbers or letters.
+dl : description list :Used for terms and their descriptions.
+20. write the difference b/w ordered and unordered list 
+A.ul :Unordered List  : Displays items with bullet points.
+Ol: Ordered list :Displays items with numbers or letters.
+21 .explain the attributes of list? 
+A. type: Changes the numbering style (e.g., 1, A, a, I, i).
+    - Example: <ol type="A"> gives A, B, C...
+- start: Sets the starting value of the first list item.
+    - Example: <ol start="5"> starts numbering from 5.
+- reversed: Reverses the order of the list numbering.
+  - Example: <ol reversed>
+Day_4
+22.What is the purpose of the `alt` attribute in the `<img>` tag?
+A.The alt attribute in the <img> tag provides alternative text for the image, shown if the image fails to load or for screen readers to improve accessibility.
+23.What is the use of the `<iframe>` tag
+A.- Use: Embed maps, YouTube videos, or other web pages.
+     - Example:
+       <iframe src="https://www.google.com/maps" width="400" height="300"></iframe>
+     - Real-Time Use Case: Showing a Google Map location on a contact page or embedding a YouTube video in a blog post.
+24.what is the use of Poster attribute in video tag?
+A.The poster attribute in the <video> tag specifies an image to be shown before the video starts playing.or as thumbnail its work.
+25.explain all video and audio attributes in html ?
+A. controls – Displays play, pause, volume controls.
+
+autoplay – Starts playing automatically when loaded.
+
+loop – Repeats the media after it ends.
+
+muted – Starts the media in a muted state.
+
+preload – Instructs how to load the media:
+
+auto (default): Load entire file,
+
+metadata: Load only metadata,
+
+none: Don’t preload.
+26.What does the `controls`  and Type attribute do in the `<audio>` and `<video>` tags?  
+A.  controls – Displays play, pause, volume controls.
+27.How can you embed a YouTube video or Google Map into your webpage?  
+A.You can embed a YouTube video or Google Map using the <iframe> tag by copying the embed code provided by YouTube or Google Maps.
+Day_5
+28.What is the purpose of the <table> tag in HTML?
+A.- An HTML table is used to organize and display data in rows and columns
+-Useful for showing schedules, price lists, reports, and structured information
+29.What is the difference between <th> and <td>?
+A. th:Table header cell (bold and centered by default).  ----> used for creating the columns (headings)
+td:table data------>used for creating the columns (data)
+30.What is the difference between cellpadding and cellspacing?
+A.cellpadding :space around the content (Space inside each cell.)
+cellspacing : Space between cells. (outside of the border)-
+31.How do you merge two cells horizontally and vertically in a table?
+A.colspan : used for merging the columns  (Merge cells horizontally.)
+rowspan : used for merging the rows  ( Merge cells vertically.)
+32.What is the purpose of the <caption> tag in a table?
+A.<caption>	Adds a title or description above the table
+33.What is the use of the <colgroup> and <col> elements?
+A.<colgroup>	Groups a set of <col> elements for styling
+<col>	Defines column-level styles like width or color
+34.What are <thead>, <tbody>, and <tfoot> used for? 
+A.<thead>	:Groups header section of the table
+<tbody>	:Groups the main data rows
+<tfoot>	:Groups footer rows (e.g., totals, notes)
+35.write the difference table attributes and table Elements with examples 
+A. cellpadding :space around the content (Space inside each cell.)
+cellspacing : Space between cells. (outside of the border)-
+align : used for alignment content : left right centet 
+bgcolor:used for applying background color a table 
+style : used for applying the styles to table
+border : it is a thin  or thick around the table 
+colspan : used for merging the columns  (Merge cells horizontally.)
+rowspan : used for merging the rows  ( Merge cells vertically.)
+width,height
+Day_6
+36.What is the difference between the GET and POST methods in a form?
+A.GET sends form data in the URL and is used for retrieving data.
+POST sends data in the request body and is used for submitting sensitive or large data.
+37.What is the use of the name attribute in form controls?
+A.The name attribute in form controls identifies the input when the form is submitted, allowing the server to access the input’s value.
+38.explain are the different  form input type attributevalues available in HTML?
+A.text – Single-line text input
+
+password – Hidden input for passwords
+
+email – Input for email addresses
+
+number – Input for numeric values
+
+tel – Input for telephone numbers
+
+url – Input for website URLs
+
+search – Input styled for search fields
+
+checkbox – Multiple option selection
+
+radio – Single choice from a group
+
+submit – Button to submit the form
+
+reset – Button to reset the form fields
+
+button – General-purpose button
+
+date – Select a date
+
+time – Select a time
+
+datetime-local – Select date and time
+
+file – Upload a file
+
+range – Slider control
+
+color – Select a color

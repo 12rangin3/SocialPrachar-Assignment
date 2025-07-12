@@ -1,0 +1,98 @@
+
+DAY_1 OF HTML5
+
+HTML: HYPERTEXT MARKUP LANGUAGE
+
+1. WHAT IS HTML?
+- HTML stands for HyperText Markup Language.
+- HyperText: Text containing hyperlinks, used to link web pages.
+- Markup: collection tags (like <img>, <p>, <h1>–<h6>, <audio>, <video>) to define elements on a webpage.
+
+2. WHY USE HTML?
+- HTML is used to build the structure of web pages and websites.
+- It forms the backbone of all web content.
+
+3. CURRENT VERSION
+- HTML5 (latest: HTML5.3)
+
+4. KEY FEATURES OF HTML5
+- Multimedia Support: Easily embed images, audio, video, and iframes (for embedding other web pages).
+- Semantic Tags: Tags with clear meaning for both developers and browsers (e.g., <header>, <footer>, <nav>, <aside>, <figure>, <caption>, <main>, <section>). These improve SEO (Search Engine Optimization).
+- Form Enhancements: New input types like date, datetime, url, range, file, image, search, etc.
+- Entities: Special characters or symbols (e.g., &amp;, &lt;, &gt;).
+- SVG: Scalable Vector Graphics for drawing shapes and images.
+- Canvas: For drawing graphics via scripting (JavaScript).
+- Offline Support: Local storage for saving data in the browser.
+- Web APIs: Access to features like geolocation, fetch (for HTTP requests), cookies, etc.
+- Responsiveness: Works with CSS Media Queries for responsive design.
+
+5. BASIC STRUCTURE OF AN HTML DOCUMENT
+- The first line should be:
+  <DOCTYPE html>  <!-- Declares the HTML CURRENT version (HTML5) -->
+
+6. TAGS AND ELEMENTS
+- Tag: Defines the type of content (e.g., <img>, <p>, <h1>).
+- Element: A tag with its content.
+  Example: <p>Hi everyone</p>
+    - <p>: Opening tag
+    - </p>: Closing tag
+    - Hi everyone: Content
+
+7. TYPES OF ELEMENTS
+- Container Elements: Have content inside them.
+  Example: <h1>Heading</h1>
+- Empty Elements: Self-closing, no content inside.
+  Examples: <img />, <hr />
+
+8. SUMMARY
+- HTML is essential for web development.
+- Learn the structure, tags, and features to build modern, responsive websites.
+
+
+STRUCTURE of webpage :
+
+<!DOCTYPE html>  <!-- represents/tells the current version of the html (HTML5)-->
+<html> <!--the root of the Html-->
+<!-- it consits of metadata(info of webpage ,author,responsive),links ,title,favicons-->
+    <head>
+      <title>intro-section</title><!-- title of webpage-->
+    </head>
+    <body> <!-- content of the webpage is present (presentation) layer -->
+        <!-- content goes Here -->
+    </body>
+</html>
+
+
+
+The <h1> to <h6> tags represent headings with different sizes:
+
+<h1> is the largest heading.
+<h2> is slightly smaller.
+<h3> is smaller than <h2>, and so on.
+<h6> is the smallest heading.
+
+Default browser sizes (approximate):
+<h1>: 2em (about 32px)
+<h2>: 1.5em (about 24px)
+<h3>: 1.17em (about 18.72px)
+<h4>: 1em (about 16px)
+<h5>: 0.83em (about 13.28px)
+
+
+Day_2  OBJECTIVE 
+Paragraphs 
+links 
+img-links 
+Text-formatting
+
+
+
+Attributes : which gives additional information  for an element or tag 
+ src width height ,alt target  ,type id ,placeholder etc...
+
+ links : 
+<a href="" target="">
+
+UseCase :
+Navbars   ,footer  
+clickable cards 
