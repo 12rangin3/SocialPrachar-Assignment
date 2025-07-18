@@ -1,0 +1,71 @@
+CSS - Day 8
+Answer the Following Questions
+1.What is Flexbox? Why would you use it over traditional float or inline-block layouts?
+A.Flexbox (Flexible Box Layout) is a CSS layout model used to create responsive, flexible layouts easily.
+
+Why use Flexbox?
+✅ Easier alignment (center, space-between, etc.)
+✅ One-dimensional layout (works in a row or column)
+✅ Automatic spacing and sizing
+✅ No clearfix hacks like with floats
+✅ Better control over layout than inline-block or float
+2.How does justify-content differ from align-items in a flex container?
+A.justify-content:
+
+Aligns items horizontally (main axis).
+
+Example: justify-content: center; → items centered left to right
+
+align-items:
+
+Aligns items vertically (cross axis).
+
+Example: align-items: center; → items centered top to bottom
+3.Describe the difference between align-items and align-content. When does align-content have an effect?
+A.align-items:
+
+Aligns individual flex items along the cross axis.
+
+Works even with one row of items.
+
+align-content:
+
+Aligns multiple rows/lines of flex items.
+
+Only has an effect when there is wrapping (flex-wrap: wrap;) and multiple lines of items.
+4.How do flex-grow, flex-shrink, and flex-basis affect the sizing of flex items?
+A.flex-grow
+
+Defines how much an item can grow relative to others.
+
+Example: flex-grow: 1; → item takes available space.
+
+flex-shrink
+
+Defines how much an item can shrink when space is tight.
+
+Example: flex-shrink: 1; → item shrinks if needed.
+
+flex-basis
+
+Sets the initial size of the item before grow/shrink.
+
+Example: flex-basis: 100px; → starts at 100px width.
+5.What happens if you set min-width or max-width on flex items?
+A.🔹 min-width:
+Prevents the item from shrinking below a certain width, even if flex-shrink allows shrinking.
+
+🔹 max-width:
+Prevents the item from growing beyond a certain width, even if flex-grow allows growing.
+6.Can you nest flex containers? What are some caveats?
+A.
+7.How would you vertically and horizontally center a div using Flexbox?
+A.To vertically and horizontally center a <div> using Flexbox, apply these styles to its parent container:
+8.What is the effect of flex-wrap: wrap on a flex container?
+A.flex-wrap: wrap allows flex items to wrap onto multiple lines if there's not enough space in one line.
+
+Without wrap (flex-wrap: nowrap; – default):
+All items stay on one line and shrink if needed.
+
+With wrap (flex-wrap: wrap;):
+Items move to the next line instead of shrinking too small.

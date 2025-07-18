@@ -1,0 +1,98 @@
+.layout{
+display: grid;
+grid-template-columns: auto auto auto auto auto;
+width: 90%;
+height: 80vh;
+gap: 10px;
+grid-template-areas: 
+"a b b b c"
+"d b b b e"
+"f g h i j"
+;
+}
+.child{
+background-color: aqua;
+/* padding: 2rem; */
+border: 2px solid red;
+border-radius: 20px;
+}
+.child-1{
+    grid-area: a;
+}
+.child-1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.child-2{
+grid-area: b;
+}
+.child-2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.child-3{
+grid-area: c;
+}
+.child-3 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.child-4{
+grid-area: d;
+}
+.child-4 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.child-5{
+grid-area: e;
+}
+.child-5 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.child-6{
+grid-area: f;
+}
+.child-6 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.child-7{
+grid-area: g;
+}
+.child-7 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.child-8{
+grid-area: h;
+}
+.child-8 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.child-9{
+grid-area: i;
+}
+.child-9 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.child-10{
+grid-area: j;
+}
+.child-10 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}

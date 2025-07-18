@@ -1,0 +1,40 @@
+CSS - Day 5
+Answer the Following Questions:
+1.Explain the difference between position: relative and position: absolute.
+A.position: relative positions the element relative to its normal position.
+
+position: absolute positions the element relative to the nearest positioned ancestor (i.e., ancestor with position: relative, absolute, or fixed).
+
+Key Difference:
+relative: keeps space in the document flow.
+
+absolute: removes the element from the flow.
+2.What is the stacking context? How does z-index work with positioned elements?
+A.Stacking context is the 3D layer system of elements on a webpage. It determines which elements appear in front or behind others.
+
+How z-index works:
+z-index only works on positioned elements (relative, absolute, fixed, sticky).
+
+Higher z-index = element appears on top.
+3.What is the difference between position: fixed and sticky?
+A.
+position: fixed:
+
+Stays fixed to the viewport (screen), even when scrolling.
+
+Doesn't move with the page.
+
+Removed from normal document flow.
+
+position: sticky:
+
+Acts like relative until a scroll threshold is met, then it sticks in place.
+
+Scrolls with the page until it "sticks".
+
+Needs a top, left, etc., value to work.
+
+Example:
+fixed: Navbar always visible on top.
+
+sticky: Header stays at top only while scrolling its section

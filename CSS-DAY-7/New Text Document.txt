@@ -1,0 +1,79 @@
+CSS - Day 7
+Answer the Following Questions:
+1.What is the difference between font-style and font-variant?
+A.font-style:
+
+Controls the style of the font (normal, italic, oblique).
+
+Example: font-style: italic;
+
+font-variant:
+
+Controls the variant of the font, usually for small-caps.
+
+Example: font-variant: small-caps;
+2.How does font-size: 2em differ from font-size: 2rem?
+A.font-size: 2em:
+
+Size is relative to the parent element’s font size.
+
+font-size: 2rem:
+
+Size is relative to the root (<html>) element’s font size.
+
+Key Difference:
+em = relative to parent
+
+rem = relative to root
+3.What is the difference between letter-spacing and word-spacing?
+A.letter-spacing:
+
+Controls the space between individual letters.
+
+Example: letter-spacing: 2px;
+
+word-spacing:
+
+Controls the space between words.
+
+Example: word-spacing: 5px;
+
+Key Difference:
+letter-spacing affects characters.
+
+word-spacing affects words.
+4.How does text-shadow work? Can you give an example?
+A.text-shadow: x-offset y-offset blur-radius color;
+5.Explain different types of colors  in css ?
+A.1. Named Colors
+Predefined names like:
+red, blue, green, black, white, orange, etc.
+
+Example: color: red;
+
+2. Hexadecimal Colors
+Format: #RRGGBB
+
+Example: #ff0000 (red), #000000 (black)
+
+3. RGB (Red, Green, Blue)
+Format: rgb(255, 0, 0)
+
+Values range from 0–255
+
+Example: color: rgb(0, 128, 255);
+
+4. RGBA (RGB + Alpha)
+Adds transparency with alpha (0 to 1)
+
+Example: rgba(0, 0, 0, 0.5);
+
+5. HSL (Hue, Saturation, Lightness)
+Format: hsl(hue, saturation%, lightness%)
+
+Example: hsl(240, 100%, 50%) (blue)
+
+6. HSLA (HSL + Alpha)
+Adds transparency
+
+Example: hsla(120, 100%, 50%, 0.3);

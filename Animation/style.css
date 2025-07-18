@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader{
+    width: 300px;
+    height: 300px;
+    border: 20px solid rgb(233, 18, 18);
+    border-top: 20px solid rgb(0, 255, 76);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: loader;
+    animation-duration: 3s;
+    animation-direction: normal;
+    /* animation-delay: 2s; */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes loader {
+    from{
+        rotate: 0deg;
+    }to{
+       rotate: 720deg;
+    }
+}
+.loader-two{
+     width: 50px;
+    height: 50px;
+    border: 20px dotted rgb(106, 231, 3);
+    /* border-top: 20px dotted rgb(106, 231, 3); */
+    border-radius: 50%;
+    animation: loader-two;
+    animation: 2s;
+    animation-direction: reverse;
+   
+}
+@keyframes loader-two{
+    from{
+        rotate: 40deg;
+    }to{
+        rotate: 360deg;
+        background-color: green;
+    }
+}
