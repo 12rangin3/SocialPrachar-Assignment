@@ -1,0 +1,50 @@
+CSS - Day 13
+Answer the Following Questions
+1.What’s the difference between auto-fit and auto-fill?
+A.auto-fill auto-fill will create as many tracks (columns) as possible, even if some of them are empty.
+
+Empty tracks will still take up space.
+
+It’s useful when you want the grid to keep its structure, even if there aren’t enough items to fill all columns.
+auto-fit will collapse any empty tracks, meaning it will only create as many columns as needed to fit the items.
+
+This makes the grid more flexible and items stretch to take up leftover space.
+2.What is the fr unit and why is it useful in responsive design?
+A.1fr means 1 fraction of the remaining available space in the grid container (after considering fixed-size tracks like px, em, %, etc.).
+
+If you define 1fr 1fr 1fr, the available free space is split equally among the three columns.
+
+If you define 2fr 1fr 1fr, the first column gets twice as much space as the second and third.
+3.What does justify-content vs justify-items do in a grid?
+A.justify-content
+Aligns the entire grid (as a whole) within its container.
+
+Works only if the grid itself is smaller than the container (e.g., due to fixed track sizes).
+
+It controls how the grid tracks (columns) are distributed.
+justify-items
+Aligns items inside their individual grid cells (horizontally).
+
+Works within each grid cell, not the whole grid.
+
+It's like text-align but for grid items.
+4.What is CSS Grid? How is it different from Flexbox?
+A.
+| **Feature**         | **CSS Grid**                                          | **Flexbox**                                       |
+| ------------------- | ----------------------------------------------------- | ------------------------------------------------- |
+| **Layout**          | **2D (rows & columns)**                               | **1D (row OR column)**                            |
+| **Main Use Case**   | Full page or section layouts                          | Aligning and distributing items in a line         |
+| **Positioning**     | You can place items by grid lines                     | Items are placed sequentially (one after another) |
+| **Space Control**   | Better control over rows & columns                    | Better control over item spacing along one axis   |
+| **Alignment**       | Has `justify-content` & `align-content` for both axes | Alignment is primarily along one axis             |
+| **Overlapping**     | Items can overlap (like layers)                       | Items don’t overlap by default                    |
+| **Complex Layouts** | Easier to build complex layouts                       | Harder to create 2D layouts                       |
+
+5.What problem does minmax() solve? Give an example.
+A.Without minmax(), if you use a fixed unit like 200px, the column won’t shrink below 200px even on smaller screens (causing overflow).
+
+If you use a flexible unit like 1fr, the column can shrink too much, making content unreadable.
+
+minmax() ensures that a grid track never gets smaller than the minimum or larger than the maximum you specify, solving both overflow and content squishing problems.
+
+

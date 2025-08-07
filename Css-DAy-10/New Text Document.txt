@@ -1,0 +1,99 @@
+CSS - Day 10
+Answer the Following Questions
+1.What is a CSS transition and how does it work?
+A.A CSS transition allows smooth animation between CSS property changes over a set duration. It works by specifying:
+
+transition-property: the property to animate
+
+transition-duration: how long the animation takes
+
+transition-timing-function: the speed curve
+
+transition-delay: delay before starting
+div {
+  transition: background-color 0.5s ease;
+}
+div:hover {
+  background-color: blue;
+}
+2.What is the difference between a transition and an animation in CSS?
+A.	Transition- 	Starts on user interaction (e.g. hover)
+  	Limited to start/end states. Uses transition property. 	No built-in repeat
+		Animation- Runs automatically or with keyframes.Offers full control with multiple keyframes. Uses @keyframes and animation property.Can loop with animation-iteration-count
+3.What is the purpose of the transition-timing-function property?
+A.The transition-timing-function property controls the speed curve of a CSS transition—how the speed of the transition progresses over time.
+
+Common values:
+linear – constant speed
+
+ease – starts slow, speeds up, then slows down (default)
+
+ease-in – starts slow, then speeds up
+
+ease-out – starts fast, then slows down
+
+ease-in-out – slow start and end
+
+cubic-bezier() – custom timing curve
+4.What is a CSS transformation? List some common transform functions?
+A.A CSS transformation allows you to visually change an element’s shape, size, position, or rotation using the transform property.
+
+Common transform functions:
+translate(x, y) – Moves the element
+
+scale(x, y) – Resizes the element
+
+rotate(angle) – Rotates the element
+
+skew(x-angle, y-angle) – Skews the element
+
+matrix(...) – Combines all transforms in one
+5.What is the transform-origin property and why is it useful?
+A.ChatGPT said:
+The transform-origin property sets the point of origin for transformations like rotate, scale, and skew.
+
+Why it's useful:
+It controls where the transformation starts from (default is the center).
+transform-origin: x-axis y-axis;
+div {
+  transform: rotate(45deg);
+  transform-origin: top left;
+}
+6.Give a real-world example where you would use a transition, a transformation, and an animation.
+A.ChatGPT said:
+Here’s a real-world example using all three:
+
+💡 Hover Button Effect (UI Interaction)
+🔹 Transition – Smooth color change on hover
+🔹 Transformation – Slight scale on hover
+🔹 Animation – Pulse effect to draw attention
+/* Animation */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Button Styling */
+button {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+/* On hover */
+button:hover {
+  background: #0056b3;
+  transform: scale(1.1);
+}
+7.What is the difference between a transition and an transform in CSS?
+A.
+| Feature              | **Transition**                                      | **Transform**                                      |
+| -------------------- | --------------------------------------------------- | -------------------------------------------------- |
+| **What it does**     | Animates the change of a CSS property over time     | Applies a visual effect (like move, scale, rotate) |
+| **Requires trigger** | Yes (e.g., hover, click, class change)              | No, it applies instantly when defined              |
+| **Controls speed**   | Yes, with `transition-duration` & `timing-function` | No speed control by itself                         |
+| **Used with**        | Other properties (e.g., `background`, `transform`)  | Standalone or with `transition`                    |

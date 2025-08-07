@@ -1,0 +1,76 @@
+CSS - Day 15
+Answer the Following Questions
+1.What is a media query in CSS, and why do we use them?
+A.A media query in CSS is a rule that allows you to apply styles conditionally based on the characteristics of the device or browser window, such as screen size, resolution, orientation, or media type.
+Why Do We Use Media Queries?
+Media queries are essential for responsive web design, where websites adapt their layout and styling for different devices (desktop, tablet, mobile).
+
+Key reasons:
+
+Responsive Design: Adjusts layout for different screen sizes.
+
+Better User Experience: Provides optimized design for mobile, tablet, and desktop users.
+
+Performance Optimization: Avoids unnecessary content on smaller devices.
+
+Device-Specific Customization: Allows customizing styles for print, high-resolution displays, or landscape/portrait modes.
+2.Explain the difference between min-width and max-width in media queries
+A.min-width
+Styles are applied when the viewport width is greater than or equal to the specified value.
+@media (min-width: 768px) {
+  body {
+    background: lightblue; /* Applied for width ≥ 768px */
+  }
+}
+max-width
+Styles are applied when the viewport width is less than or equal to the specified value.
+@media (max-width: 768px) {
+  body {
+    background: lightgreen; /* Applied for width ≤ 768px */
+  }
+}
+3.What is the difference between screen, print, and all in media queries?
+A.screen
+Used for display screens like monitors, tablets, and mobile devices.
+
+Most common for responsive web design.
+@media screen and (max-width: 768px) {
+  body {
+    background: lightblue;
+  }
+}
+print
+Used when printing a webpage (e.g., when you hit Ctrl + P or Print Preview).
+
+Helps create printer-friendly versions of web pages.
+@media print {
+  body {
+    background: white;
+    color: black;
+    font-size: 12pt;
+  }
+  nav, footer {
+    display: none; /* Hide navigation and footer when printing */
+  }
+}
+all
+Applies to all media types (both screen and print).
+
+It's the default media type when no type is specified.
+
+@media all and (max-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+}
+4.What is the difference between em and px units in media queries?
+A.px (Pixels)
+Absolute unit.
+1px = 1 device pixel (not scalable).
+
+Breakpoints defined in px remain fixed, regardless of the user's font size settings or browser zoom.
+em (Relative Unit)
+Relative to the browser's default font-size.
+Usually, 1em = 16px (if the default font size is 16px).
+
+Breakpoints scale when the user changes the default font size in the browser settings, making them more accessible.

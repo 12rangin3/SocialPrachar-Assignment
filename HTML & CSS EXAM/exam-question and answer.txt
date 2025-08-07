@@ -1,0 +1,63 @@
+Test on HTML & CSS
+Section A – Theory Questions (Total: 30 Marks)
+
+1.What is semantic HTML? Name at least 4 semantic tags and explain their usage.
+A.Semantic HTML is the use of HTML tags that have a meaningful name and clearly describe the role or purpose of the content they contain. 
+Semantic HTML Tags
+	i.<header>
+	ii.<main>
+	iii.<article>
+	iv.<footer>
+2.How does the box model work in CSS? Explain with a diagram and example.
+A.The CSS Box Model is a fundamental concept that describes how elements are structured and how spacing is calculated on a web page. Each HTML element is considered as a rectangular box, which consists of the following areas (from inside out):
+
+Content – The actual content of the box (text, images, etc.).
+
+Padding – Space between the content and the border.
+
+Border – A border that wraps around the padding and content.
+
+Margin – The outermost layer, creating space between the element and other elements.
+3.Explain the difference between inline, block, and inline-block elements with examples.
+A. Block Elements
+Start on a new line and take up the full width available (by default).
+
+You can set width, height, margin, and padding.
+Inline Elements
+Do not start on a new line; they flow within text.
+
+You cannot set width or height (padding and margin work horizontally but not vertically).
+Inline-Block Elements
+Behave like inline elements (stay in the same line),
+but you can set width, height, margin, and padding like a block element.
+4.What is the role of z-index in CSS? When does it not work?
+A.Elements with a higher z-index value will appear in front of elements with a lower z-index value.
+It only works on elements that have a position value other than static (e.g., relative, absolute, fixed, or sticky).
+5.What is the difference between internal, external, and inline CSS? Which one is best for large projects and why?
+A.internal css - internal css is used by style tag inside the style tag css code will be written
+inline css- inside the html tag and element we can directly apply css property
+external css- in external css we have to create a separate file for code the css property and it will connect by link tag
+6.Explain media queries in CSS. How are they used for responsive design?
+A.in css media query used for make the website responsive for multiple divice like mobile ,tab, laptop etc....
+basic syntax of media query
+ @media screen and (max-width: 768px) {
+  body {
+    background-color: lightblue;
+    font-size: 16px;
+  }
+}
+7.How can we create a fixed navigation bar that stays at the top while scrolling?
+A.for create a fixed navigation bar we have to use the css property - position: fixed; then it will be fixed and cant move
+8.What are pseudo-classes in CSS? Give examples of at least 3 pseudo-classes with explanations.
+A.A pseudo-class in CSS is a keyword added to selectors that specifies a special state of an element.
+example of pseudo classes :visited – Styles visited links.
+
+:nth-child(n) – Styles the nth child of a parent element.
+
+:last-child – Styles the last child element.
+9.Explain the difference between em, rem, px, and % in CSS units.
+A.In CSS, units like em, rem, px, and % are used to define sizes (fonts, margins, padding, etc.). The key difference is whether they are relative or absolute.
+1rem = 16px 
+Use % or em for layouts to make them responsive.
+10.What are the advantages of using Flexbox over traditional float-based layouts?
+A.Advantage of using flex-box Easy Vertical and Horizontal Centering.Direction Control (Row or Column).Responsive Design Made Easy,Space Distribution and Alignment, Equal Height Columns

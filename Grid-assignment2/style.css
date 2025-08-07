@@ -1,0 +1,48 @@
+body{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.layout{
+display: grid;
+grid-template-columns: auto auto;
+width: 90%;
+margin-left: 30px;
+border-radius: 10px;
+grid-template-areas: 
+"a a"
+"b c"
+;
+box-shadow: -3px 3px 3px 3px red;
+}
+.child{
+background-color: yellow;
+/* border: 2px solid green; */
+padding: 2rem;
+border-radius: 10px;
+}
+.child-1{
+grid-area: a;
+background-color: white;
+}
+.child-1 h3{
+  color: rgb(21, 117, 117);
+}
+.child-1 h4{
+  color: rgb(100, 100, 12);
+}
+.child-2{
+grid-area: b;
+background-color: rgb(19, 171, 171);
+color: wheat;
+}
+.child-2 button{
+  background-color: yellow;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+}
+.child-3{
+grid-area: c;
+background-color: rgb(15, 209, 209);
+color: white;
+}

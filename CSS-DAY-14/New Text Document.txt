@@ -1,0 +1,70 @@
+CSS - Day 14
+Answer the Following Questions
+1.What is the difference between pseudo-classes and pseudo-elements?
+a.Pseudo-classes (:)
+Describe a special state of an element.
+Example:a:hover { color: red; } /* Styles a link when hovered */
+Pseudo-elements (::)
+Select and style a part of an element, like the first line, first letter, or a virtual element (before/after content).
+Example:p::first-line { font-weight: bold; }
+
+2.What’s the difference between :first-child and :nth-child(1)?
+a.:first-child
+Selects the element if it is the first child of its parent.
+p:first-child { color: blue; }
+:nth-child(1)
+Selects the first element of its parent, regardless of type (same as :first-child).
+p:nth-child(1) { color: blue; }
+3.Explain :not() vs :where() — how do they affect specificity?
+A.:not(selector)
+Excludes elements that match the selector. Its specificity is equal to the selector inside.
+div:not(.highlight) { color: black; }
+:where(selector)
+Works like :not(), but it adds zero specificity regardless of the selector inside.
+:where(section p) { margin: 0; } /* 0 specificity */
+
+4.What problem does :is() solve? Give a real‑world selector example.
+A.:is() allows you to group selectors without repeating the parent. It takes the highest specificity of its arguments.
+article h1, article h2, article h3 { color: red; }
+article :is(h1, h2, h3) { color: red; }
+5.What’s the difference between :focus, :focus-visible, and :focus-within?
+A.:focus
+Styles an element when it is focused (clicked or tabbed into).
+input:focus { border: 2px solid blue; }
+:focus-visible
+Styles elements only when focus is visible (keyboard users), avoiding unwanted outlines for mouse clicks.
+input:focus-visible { outline: 2px solid orange; }
+:focus-within
+Styles a parent if any of its children are focused.
+form:focus-within { background: #f5f5f5; }
+6.Why do we need content when using ::before and ::after?
+A.::after?
+::before and ::after create generated content, which doesn’t exist in the HTML.
+
+content is required to render them, even if empty:
+button::before { content: ""; display: block; }
+7.What’s the difference between ::first-line and ::first-letter?
+A.::first-line
+Styles the first line of text in a block.
+p::first-line { font-weight: bold; }
+::first-letter
+Styles only the first letter of the block.
+p::first-letter { font-size: 2em; }
+8.What does ::selection style? What are its limitations?
+A.::selection styles the portion of text highlighted by the user (when you drag the mouse to select text).
+p::selection { background: yellow; color: black; }
+9.Explain ::marker — what elements can it style?
+A.::marker styles the bullet or numbering of list items.
+li::marker { color: red; font-size: 1.5em; }
+
+10.What’s the difference between [attr], [attr="value"], and [attr^="val"]?
+A.[attr]
+Selects elements that have the attribute, regardless of value.
+[title] { color: green; }
+[attr="value"]
+Selects elements where the attribute exactly matches the value.
+[type="text"] { border: 1px solid blue; }
+[attr^="val"]
+Selects elements where the attribute value starts with "val".
+[class^="btn"] { padding: 10px; }
+
