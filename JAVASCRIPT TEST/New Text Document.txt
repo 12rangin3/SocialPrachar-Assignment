@@ -1,0 +1,57 @@
+1. What is JavaScript? Explain its main features and at least three real-life applications.
+Ans-> javascript is highlable dynamic programming language
+javascript run in the browser both client side as well as server side. its core technologies of web dev along with html and css.
+2. List the differences between var, let, and const with suitable examples.
+Ans-> for creating a variable we can use or declare with keyword var, const and let
+var - var is (global)function scope varible we can access it outside of blockscope{}
+we can redeclare
+let- let is block scope varible we cant access outside of {}
+const - block scope variable. cant redeclare 
+
+3. What is hoisting in javascript with examples
+
+Ans->moving declarations to the top of their scope (global or function) before code execution.
+ex-console.log(a);
+	var a = 10;
+	concole.log(a);// output - 10
+
+4. What is TDZ in javascript
+Ans-> its stands for temporal dead zone
+tdz apply to varible declare let and const
+ex- console.log(myName);
+let myName = "Swagat kumar";
+variable hoisted but not accessible for the declare variable
+
+5. Explain the difference b/w paresInt and parseFloat and Number()
+Ans-> parseInt-Parses a string and returns an integer.ignore decimal number,return integer only
+parseInt("42");  
+	parseInt("42.85");   
+parseInt("42px");     
+	parseInt("abc42");     
+parseInt("1010", 2);
+
+parsefloat()-keep decimal number. 
+
+6. Explain the difference b/w primitive and non-primitive datatypes?
+primitive datatypes aare immutable we cant change the value;
+primitive datatypes are number, string ,Boolean,undefined ,null,bigIng and symbol
+
+nonprimitive - these are mutable 
+example of nonprimitive- object,array ,function
+
+7. Explain the difference b/w initialization,declaration ,redeclaration and re-assignment with examples
+Ans-> let a ;; is declaration
+let a = 10; is initialization
+var a = 10;
+var a = 12; redeclaration
+
+let a = 5;
+a = 10;reassignment
+
+8. Explain the difference b/w inline and internal and external javascript.
+
+Ans->for external js we have to create a separate file and link in html 
+in inline js we can directly apply js code in html tag or element
+for internal js we can create a script tag and write there js code.
+
+
